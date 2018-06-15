@@ -13,6 +13,7 @@ public class DragAndDropExampleTwo extends BaseClassChrome {
 		Actions action = new Actions(driver);
 		action.dragAndDropBy(block1, block3.getLocation().getX(),block3.getSize().getHeight()+10).perform();
 		Thread.sleep(2000);
+		driver.close();
 	}
 }
 
