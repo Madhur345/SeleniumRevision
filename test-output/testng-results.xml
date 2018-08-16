@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser is opened]]>
+    </line>
+    <line>
+      <![CDATA[Browser is maximized]]>
+    </line>
+    <line>
+      <![CDATA[Application is opened]]>
+    </line>
+    <line>
+      <![CDATA[Application is closed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25565" started-at="2018-08-13T06:09:58Z" finished-at="2018-08-13T06:10:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25565" started-at="2018-08-13T06:09:58Z" finished-at="2018-08-13T06:10:23Z">
+      <class name="seleniumrevision.org.test.ReporterDemo">
+        <test-method status="PASS" signature="testReport()[pri:0, instance:seleniumrevision.org.test.ReporterDemo@646d64ab]" name="testReport" duration-ms="25537" started-at="2018-08-13T06:09:58Z" finished-at="2018-08-13T06:10:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is opened]]>
+            </line>
+            <line>
+              <![CDATA[Browser is maximized]]>
+            </line>
+            <line>
+              <![CDATA[Application is opened]]>
+            </line>
+            <line>
+              <![CDATA[Application is closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testReport -->
+      </class> <!-- seleniumrevision.org.test.ReporterDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
