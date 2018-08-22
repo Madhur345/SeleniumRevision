@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumrevision.org.test.ReporterDemo">
+      <class name="seleniumrevision.org.test.ReadDataFromPDF">
         <methods>
-          <include name="testReport"/>
+          <include name="readData"/>
         </methods>
-      </class> <!-- seleniumrevision.org.test.ReporterDemo -->
+      </class> <!-- seleniumrevision.org.test.ReadDataFromPDF -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
