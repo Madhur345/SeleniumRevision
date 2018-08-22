@@ -18,7 +18,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class ReadPDFDataFromURL extends BaseClassFireFox {
+public class PDFFetchFromURL extends BaseClassFireFox {
 	@Test
 	public void pdf() throws IOException, InterruptedException {
 		driver.get("http://tpod.accotech.xyz/erp_squareplums/index.html#/login");
@@ -45,34 +45,32 @@ public class ReadPDFDataFromURL extends BaseClassFireFox {
 		String title = driver.getTitle();
 		Set <String> allWindowHandles = driver.getWindowHandles();
 		int count = allWindowHandles.size();
-		System.out.println("Total number of browser window is : "+count);
-		for(String windowHandle:allWindowHandles){
+		System.out.println("Total number of browser opened :" +count);
+		for(String windowHandle :allWindowHandles){
 			driver.switchTo().window(windowHandle);
 			if(windowHandle.equals(parentWindowHandle)){
 				driver.close();
-				System.out.println("The browser window with tilte " +title+ " is closed");
+				System.out.println("The browser with title "+title+" is closed");
 			}
 		}
 		String getURL = driver.getCurrentUrl();
-		System.out.println(getURL);
 		URL pdfURL = new URL(getURL);
 		InputStream inputStr=pdfURL.openStream();
-		BufferedInputStream file= new BufferedInputStream(inputStr);
+		BufferedInputStream file = new BufferedInputStream(inputStr);
 		PDFParser parser = new PDFParser(file);
 		parser.parse();
-		String expectedText ="OR006 - Charges towards documentation";
-		COSDocument cosDocument=parser.getDocument();
-		PDDocument pdDocument = new PDDocument(cosDocument);
+		COSDocument cosDOC=	parser.getDocument();
+		PDDocument pdDOC = new PDDocument(cosDOC);
 		PDFTextStripper strip = new PDFTextStripper();
-		String data=strip.getText(pdDocument);
-		System.out.println(data);
+		String data = strip.getText(pdDOC);
+		String expectedText ="OR006 - Charges towards documentation";
 		Assert.assertTrue(data.contains(expectedText));
-		cosDocument.close();
-		pdDocument.close();
-		System.out.println("Correct Service Type Is Found");
+		cosDOC.close();
+		pdDOC.close();
+		System.out.println("Correct Service category "+expectedText+ " is found");
 	}
 	@AfterTest
 	public void closeBrowser(){
 		driver.close();
 	}
-}
+}	
