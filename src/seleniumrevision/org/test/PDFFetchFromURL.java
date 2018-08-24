@@ -45,6 +45,7 @@ public class PDFFetchFromURL extends BaseClassFireFox {
 		String title = driver.getTitle();
 		Set <String> allWindowHandles = driver.getWindowHandles();
 		int count = allWindowHandles.size();
+		
 		System.out.println("Total number of browser opened :" +count);
 		for(String windowHandle :allWindowHandles){
 			driver.switchTo().window(windowHandle);
@@ -63,6 +64,7 @@ public class PDFFetchFromURL extends BaseClassFireFox {
 		PDDocument pdDOC = new PDDocument(cosDOC);
 		PDFTextStripper strip = new PDFTextStripper();
 		String data = strip.getText(pdDOC);
+		System.out.println(data);
 		String expectedText ="OR006 - Charges towards documentation";
 		Assert.assertTrue(data.contains(expectedText));
 		cosDOC.close();

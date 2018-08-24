@@ -17,6 +17,9 @@ public class ExcelDemo {
 		Cell cell = row.getCell(0);
 		String unValue =cell.toString();
 		String pwdValue =wb.getSheet("Invoices Summary").getRow(1).getCell(5).toString();
+		int rowCount =0;
+		 rowCount = wb.getSheet("Invoices Summary").getLastRowNum();
+		 System.out.println(rowCount);
 		System.out.println(unValue+":"+pwdValue);
 	}
 }
