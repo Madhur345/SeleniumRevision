@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39822" started-at="2018-08-25T13:57:13Z" finished-at="2018-08-25T13:57:53Z">
+  <suite name="Default suite" duration-ms="10638" started-at="2018-09-07T08:59:22Z" finished-at="2018-09-07T08:59:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39822" started-at="2018-08-25T13:57:13Z" finished-at="2018-08-25T13:57:53Z">
-      <class name="seleniumrevision.org.test.ReadPDFDataFromURL">
-        <test-method status="PASS" signature="pdf()[pri:0, instance:seleniumrevision.org.test.ReadPDFDataFromURL@461ad730]" name="pdf" duration-ms="39259" started-at="2018-08-25T13:57:13Z" finished-at="2018-08-25T13:57:52Z">
+    <test name="Default test" duration-ms="10638" started-at="2018-09-07T08:59:22Z" finished-at="2018-09-07T08:59:33Z">
+      <class name="seleniumrevision.org.test.DatabaseTesting">
+        <test-method status="PASS" signature="databaseTesting()[pri:0, instance:seleniumrevision.org.test.DatabaseTesting@7283d3eb]" name="databaseTesting" duration-ms="10611" started-at="2018-09-07T08:59:22Z" finished-at="2018-09-07T08:59:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pdf -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:seleniumrevision.org.test.ReadPDFDataFromURL@461ad730]" name="closeBrowser" is-config="true" duration-ms="435" started-at="2018-08-25T13:57:52Z" finished-at="2018-08-25T13:57:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- seleniumrevision.org.test.ReadPDFDataFromURL -->
+        </test-method> <!-- databaseTesting -->
+      </class> <!-- seleniumrevision.org.test.DatabaseTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
