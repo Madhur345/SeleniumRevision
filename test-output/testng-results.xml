@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10638" started-at="2018-09-07T08:59:22Z" finished-at="2018-09-07T08:59:33Z">
+  <suite name="Default suite" duration-ms="4962" started-at="2018-10-22T03:27:16Z" finished-at="2018-10-22T03:27:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10638" started-at="2018-09-07T08:59:22Z" finished-at="2018-09-07T08:59:33Z">
-      <class name="seleniumrevision.org.test.DatabaseTesting">
-        <test-method status="PASS" signature="databaseTesting()[pri:0, instance:seleniumrevision.org.test.DatabaseTesting@7283d3eb]" name="databaseTesting" duration-ms="10611" started-at="2018-09-07T08:59:22Z" finished-at="2018-09-07T08:59:33Z">
+    <test name="Default test" duration-ms="4962" started-at="2018-10-22T03:27:16Z" finished-at="2018-10-22T03:27:21Z">
+      <class name="seleniumrevision.org.test.Ajaxdemo">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:seleniumrevision.org.test.Ajaxdemo@81d9a72]" name="setUp" is-config="true" duration-ms="3998" started-at="2018-10-22T03:27:16Z" finished-at="2018-10-22T03:27:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- databaseTesting -->
-      </class> <!-- seleniumrevision.org.test.DatabaseTesting -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test_AjaxExample()[pri:0, instance:seleniumrevision.org.test.Ajaxdemo@81d9a72]" name="test_AjaxExample" duration-ms="934" started-at="2018-10-22T03:27:20Z" finished-at="2018-10-22T03:27:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_AjaxExample -->
+      </class> <!-- seleniumrevision.org.test.Ajaxdemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

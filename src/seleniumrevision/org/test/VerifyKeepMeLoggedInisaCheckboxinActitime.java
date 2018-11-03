@@ -9,6 +9,7 @@ public class VerifyKeepMeLoggedInisaCheckboxinActitime extends BaseClassFireFox 
 		WebElement checkbox=driver.findElement(By.name("remember"));
 		Thread.sleep(2000);
 		String actiCheckBox =checkbox.getAttribute("type");
+		System.out.println(actiCheckBox);
 		if(actiCheckBox.equalsIgnoreCase("checkbox")){
 			System.out.println("KeepMeLoggedIn is a Checkbox in Actitime");
 		}

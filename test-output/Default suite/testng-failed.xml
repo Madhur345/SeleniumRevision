@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumrevision.org.test.ReadDataFromPDF">
+      <class name="seleniumrevision.org.test.Ajaxdemo">
         <methods>
-          <include name="readData"/>
+          <include name="setUp"/>
+          <include name="test_AjaxExample"/>
         </methods>
-      </class> <!-- seleniumrevision.org.test.ReadDataFromPDF -->
+      </class> <!-- seleniumrevision.org.test.Ajaxdemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
